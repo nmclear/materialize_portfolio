@@ -22,6 +22,9 @@ body {
     Font-Family: 'Cabin', Sans-Serif;
 }
 
+.container {
+    width: 80%;
+}
 
 nav.navCenter ul {
     text-align: center;
@@ -60,19 +63,30 @@ nav.navCenter ul li a {
     text-align: center;
 }
 
+.headerSubAbout {
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+}
+
+.portRow {
+    margin-bottom: 0;
+}
+
 .headshot {
     height: 200px;
     width: 200px;
     border-radius: 50%;
     margin-top: 10px;
     margin-right: 20px;
+    margin-bottom: 0;
 }
 
 .aboutText {
     letter-spacing: 1px;
-    line-height: 150%;
-    font-size: 16px;
-    margin: 10px;
+    line-height: 120%;
+    font-size: 20px;
+    margin: 12px;
 }
 
 a {
