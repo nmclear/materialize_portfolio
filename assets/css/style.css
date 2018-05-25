@@ -1,4 +1,6 @@
-
+* {
+    box-sizing: border-box;
+}
 
 .sideNavPalmBackground {
     background-repeat: no-repeat;
@@ -20,6 +22,20 @@ body {
     Font-Family: 'Cabin', Sans-Serif;
 }
 
+
+nav.navCenter ul {
+    text-align: center;
+}
+nav.navCenter ul li {
+    display: inline;
+    float: none;
+}
+nav.navCenter ul li a {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
 .headerName,
 .headerTitle,
 .headerTag {
@@ -37,4 +53,28 @@ body {
 
 .headerTag {
     font-size: 84px;
+}
+
+.headerAbout {
+    font-size: 50px;
+    text-align: center;
+}
+
+.headshot {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.aboutText {
+    letter-spacing: 1px;
+    line-height: 150%;
+    font-size: 16px;
+    margin: 10px;
+}
+
+a {
+    color: inherit;
 }
