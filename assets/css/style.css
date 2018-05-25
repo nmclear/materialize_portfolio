@@ -1,0 +1,40 @@
+
+
+.sideNavPalmBackground {
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-image: url(../images/montage_cal_bgpic.jpg);
+}
+
+.puzzlePieceIcon {
+    color: #03a9f4;
+}
+
+body {
+    /* background-image: url(../images/blue_white_brick.jpeg); */
+    background-image: url(../images/white_brick.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    Font-Family: 'Cabin', Sans-Serif;
+}
+
+.headerName,
+.headerTitle,
+.headerTag {
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+    font-weight: 700px;
+}
+
+.headerName {
+    font-size: 72px;
+}
+
+.headerTitle {
+    font-size: 40px;
+}
+
+.headerTag {
+    font-size: 84px;
+}
