@@ -11,7 +11,6 @@ $(document).ready(function(){
 //========================================================================================================================
 // ON PAGE LOAD CALLS
 //========================================================================================================================
-//on page load, show HomePage, hide all others
     displayHomePage();
 
 
@@ -19,38 +18,32 @@ $(document).ready(function(){
 // NAVBAR CLICK LISTENERS
 //========================================================================================================================
     $('#navHome').on('click', function(){
-        hideAllContainers();
+        slideUpAllContainers();
         $('#containerHome').slideDown();
-        // displayHomePage();
     });
 
     $('#navAbout').on('click', function(){
-        hideAllContainers();
-        // $('#containerAbout').show();
+        slideUpAllContainers();
         $('#containerAbout').slideDown();
     });
 
     $('#navEducation').on('click', function(){
-        hideAllContainers();
-        // $('#containerEducation').show();
+        slideUpAllContainers();
         $('#containerEducation').slideDown();
     });
 
     $('#navProjects').on('click', function(){
-        hideAllContainers();
-        // $('#containerProjects').show();
+        slideUpAllContainers();
         $('#containerProjects').slideDown();
     });
 
     $('#navHobbies').on('click', function(){
-        hideAllContainers();
-        // $('#containerHobbies').show();
+        slideUpAllContainers();
         $('#containerHobbies').slideDown();
     });
 
     $('#navContact').on('click', function(){
-        hideAllContainers();
-        // $('#containerContact').show();
+        slideUpAllContainers();
         $('#containerContact').slideDown();
     });
 
@@ -58,16 +51,16 @@ $(document).ready(function(){
 // FUNCTIONS
 //========================================================================================================================
 
-    // function hideAllContainers() {
-    //     $('#containerHome').hide();
-    //     $('#containerAbout').hide();
-    //     $('#containerEducation').hide();
-    //     $('#containerProjects').hide();
-    //     $('#containerHobbies').hide();
-    //     $('#containerContact').hide();
-    // }
-
     function hideAllContainers() {
+        $('#containerHome').hide();
+        $('#containerAbout').hide();
+        $('#containerEducation').hide();
+        $('#containerProjects').hide();
+        $('#containerHobbies').hide();
+        $('#containerContact').hide();
+    }
+
+    function slideUpAllContainers() {
         $('#containerHome').slideUp();
         $('#containerAbout').slideUp();
         $('#containerEducation').slideUp();
@@ -78,7 +71,8 @@ $(document).ready(function(){
 
     function displayHomePage() {
         hideAllContainers();
-        $('#containerHome').slideDown();
+        $('#containerHome').show();
+        $("div.hidden").removeClass("hidden");
     }
 
 //========================================================================================================================
@@ -143,12 +137,6 @@ function getContactInputValues() {
     }
 
     database.ref().push(newContactFormMessage);
-
-    // SET VALUES
-    // $('#first_name').val(firstName);
-    // $('#last_name').val(lastName);
-    // $('#email').val(email);
-    // $('#contactMessage').val(message);
 }
 
 
