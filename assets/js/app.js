@@ -76,6 +76,25 @@ $(document).ready(function(){
         $('#containerContact').show();
     });
 
+
+
+//========================================================================================================================
+// FIREBASE
+//========================================================================================================================
+  // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyC9QrfmjqaHdJTy73WTLUUxEi3voCF1GvU",
+        authDomain: "portfolio-fb684.firebaseapp.com",
+        databaseURL: "https://portfolio-fb684.firebaseio.com",
+        projectId: "portfolio-fb684",
+        storageBucket: "",
+        messagingSenderId: "29324912075"
+    };
+    firebase.initializeApp(config);
+    // Create a variable to reference the database
+    var database = firebase.database();
+
+
 //========================================================================================================================
 // TYPE WRITER ANIMATION
 //========================================================================================================================
@@ -112,11 +131,6 @@ function clearContactInputValues() {
     $('#last_name').val('');
     $('#email').val('');
     $('#contactMessage').val('');
-
-    console.log($('#first_name').val());
-    console.log($('#last_name').val());
-    console.log($('#email').val());
-    console.log($('#contactMessage').val());
 }
 
 function getContactInputValues() {
@@ -126,11 +140,21 @@ function getContactInputValues() {
     var email = $('#email').val().trim();
     var message = $('#contactMessage').val().trim();
 
+    var newContactFormMessage = {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        message: message
+    }
+
+    database.ref().push(newContactFormMessage);
+
+
     // SET VALUES
-    $('#first_name').val(firstName);
-    $('#last_name').val(lastName);
-    $('#email').val(email);
-    $('#contactMessage').val(message);
+    // $('#first_name').val(firstName);
+    // $('#last_name').val(lastName);
+    // $('#email').val(email);
+    // $('#contactMessage').val(message);
 }
 
 
