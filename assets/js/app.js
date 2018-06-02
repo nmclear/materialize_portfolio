@@ -12,96 +12,38 @@ $(document).ready(function(){
 // ON PAGE LOAD CALLS
 //========================================================================================================================
 //on page load, show HomePage, hide all others
-    // $('#containerHome').show();
-    // $('#containerAbout').hide();
-    // $('#containerEducation').hide();
-    // $('#containerProjects').hide();
-    // $('#containerHobbies').hide();
-    // $('#containerContact').hide();
-
     displayHomePage();
 
-    // if($('.container').attr("isShowing") === "true"){
-    //     $('.container').show();
-    // } else {
-    //     $('.container').hide();
-    // }
 
 //========================================================================================================================
 // NAVBAR CLICK LISTENERS
 //========================================================================================================================
     $('#navHome').on('click', function(){
-        // $('#containerHome').show();
-        // $('#containerAbout').hide();
-        // $('#containerEducation').hide();
-        // $('#containerProjects').hide();
-        // $('#containerHobbies').hide();
-        // $('#containerContact').hide();
-
         displayHomePage();
     });
 
     $('#navAbout').on('click', function(){
-        // $('#containerHome').hide();
-        // $('#containerAbout').show();
-        // $('#containerEducation').hide();
-        // $('#containerProjects').hide();
-        // $('#containerHobbies').hide();
-        // $('#containerContact').hide();
-
         hideAllContainers();
         $('#containerAbout').show();
-
     });
 
     $('#navEducation').on('click', function(){
-        // $('#containerHome').hide();
-        // $('#containerAbout').hide();
-        // $('#containerEducation').show();
-        // $('#containerProjects').hide();
-        // $('#containerHobbies').hide();
-        // $('#containerContact').hide();
-
         hideAllContainers();
         $('#containerEducation').show();
-
-
     });
 
     $('#navProjects').on('click', function(){
-        // $('#containerHome').hide();
-        // $('#containerAbout').hide();
-        // $('#containerEducation').hide();
-        // $('#containerProjects').show();
-        // $('#containerHobbies').hide();
-        // $('#containerContact').hide();
-
         hideAllContainers();
         $('#containerProjects').show();
-
     });
 
     $('#navHobbies').on('click', function(){
-        // $('#containerHome').hide();
-        // $('#containerAbout').hide();
-        // $('#containerEducation').hide();
-        // $('#containerProjects').hide();
-        // $('#containerHobbies').show();
-        // $('#containerContact').hide();
-
         hideAllContainers();
         $('#containerHobbies').show();
     });
 
     $('#navContact').on('click', function(){
-        // $('#containerHome').hide();
-        // $('#containerAbout').hide();
-        // $('#containerEducation').hide();
-        // $('#containerProjects').hide();
-        // $('#containerHobbies').hide();
-
         hideAllContainers();
-
         $('#containerContact').show();
     });
 
