@@ -6,7 +6,7 @@ $(document).ready(function(){
     //Show side Nav
     $('.sidenav').sidenav();
     //Autoresize text input box
-    M.textareaAutoResize($('#textarea1'));
+    M.textareaAutoResize($('#contactMessage'));
 
 //========================================================================================================================
 // ON PAGE LOAD CALLS
@@ -80,6 +80,7 @@ $(document).ready(function(){
 // TYPE WRITER ANIMATION
 //========================================================================================================================
 
+
 var instance = new TypeIt('.headerTag', {
     strings: ['Full-Stack Developer.', 'Brewing up web applications.'],
     nextStringDelay: 2500,
@@ -88,19 +89,49 @@ var instance = new TypeIt('.headerTag', {
     loop: true
 });
 
+//========================================================================================================================
+// CONTACT FORM
+//========================================================================================================================
+
+$('#contactFormSubmitBtn').on('click', function() {
+    event.preventDefault();
+
+    getContactInputValues();
+
+    console.log($('#first_name').val());
+    console.log($('#last_name').val());
+    console.log($('#email').val());
+    console.log($('#contactMessage').val());
+
+    clearContactInputValues();
+});
 
 
+function clearContactInputValues() {
+    $('#first_name').val('');
+    $('#last_name').val('');
+    $('#email').val('');
+    $('#contactMessage').val('');
 
+    console.log($('#first_name').val());
+    console.log($('#last_name').val());
+    console.log($('#email').val());
+    console.log($('#contactMessage').val());
+}
 
+function getContactInputValues() {
+    //GET INPUTS
+    var firstName = $('#first_name').val().trim();
+    var lastName = $('#last_name').val().trim();
+    var email = $('#email').val().trim();
+    var message = $('#contactMessage').val().trim();
 
-
-
-
-
-
-
-
-
+    // SET VALUES
+    $('#first_name').val(firstName);
+    $('#last_name').val(lastName);
+    $('#email').val(email);
+    $('#contactMessage').val(message);
+}
 
 
 

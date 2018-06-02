@@ -121,6 +121,11 @@ a {
     margin-bottom: 18px;
 }
 
+#contactFormSubmitBtn {
+    background: #03a9f4;
+    border-radius: 25px;
+}
+
 
 /* CONTACT FORM STYLING */
   .input-field label {
@@ -131,14 +136,14 @@ a {
   .input-field input[type=text]:focus + #first_nameLabel,
   .input-field input[type=text]:focus + #last_nameLabel,
   .input-field input[type=email]:focus + #emailLabel,
-  .input-field textarea[id=textarea1]:focus + #messageLabel {
+  .input-field textarea[id=contactMessage]:focus + #messageLabel {
     color: #03a9f4;
   }
 
   #first_name:focus,
   #last_name:focus,
   #email:focus,
-  #textarea1:focus {
+  #contactMessage:focus {
     border-bottom: 1px solid #03a9f4;;
     box-shadow: 0 1px 0 0 #03a9f4;;
   }
