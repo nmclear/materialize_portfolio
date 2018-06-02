@@ -78,31 +78,34 @@ $(document).ready(function(){
     });
 
 //========================================================================================================================
-//
+// TYPE WRITER ANIMATION
 //========================================================================================================================
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var instance = new TypeIt('.headerTag', {
+    strings: ['Full-Stack Developer.', 'Brewing up web applications.'],
+    nextStringDelay: 2500,
+    breakLines: false,
+    loop: true
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}); //DOCUMENT END
