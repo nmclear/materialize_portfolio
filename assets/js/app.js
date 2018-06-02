@@ -19,50 +19,66 @@ $(document).ready(function(){
 // NAVBAR CLICK LISTENERS
 //========================================================================================================================
     $('#navHome').on('click', function(){
-        displayHomePage();
+        hideAllContainers();
+        $('#containerHome').slideDown();
+        // displayHomePage();
     });
 
     $('#navAbout').on('click', function(){
         hideAllContainers();
-        $('#containerAbout').show();
+        // $('#containerAbout').show();
+        $('#containerAbout').slideDown();
     });
 
     $('#navEducation').on('click', function(){
         hideAllContainers();
-        $('#containerEducation').show();
+        // $('#containerEducation').show();
+        $('#containerEducation').slideDown();
     });
 
     $('#navProjects').on('click', function(){
         hideAllContainers();
-        $('#containerProjects').show();
+        // $('#containerProjects').show();
+        $('#containerProjects').slideDown();
     });
 
     $('#navHobbies').on('click', function(){
         hideAllContainers();
-        $('#containerHobbies').show();
+        // $('#containerHobbies').show();
+        $('#containerHobbies').slideDown();
     });
 
     $('#navContact').on('click', function(){
         hideAllContainers();
-        $('#containerContact').show();
+        // $('#containerContact').show();
+        $('#containerContact').slideDown();
     });
 
 //========================================================================================================================
 // FUNCTIONS
 //========================================================================================================================
 
+    // function hideAllContainers() {
+    //     $('#containerHome').hide();
+    //     $('#containerAbout').hide();
+    //     $('#containerEducation').hide();
+    //     $('#containerProjects').hide();
+    //     $('#containerHobbies').hide();
+    //     $('#containerContact').hide();
+    // }
+
     function hideAllContainers() {
-        $('#containerHome').hide();
-        $('#containerAbout').hide();
-        $('#containerEducation').hide();
-        $('#containerProjects').hide();
-        $('#containerHobbies').hide();
-        $('#containerContact').hide();
+        $('#containerHome').slideUp();
+        $('#containerAbout').slideUp();
+        $('#containerEducation').slideUp();
+        $('#containerProjects').slideUp();
+        $('#containerHobbies').slideUp();
+        $('#containerContact').slideUp();
     }
 
     function displayHomePage() {
         hideAllContainers();
-        $('#containerHome').show();
+        $('#containerHome').slideDown();
     }
 
 //========================================================================================================================
