@@ -26,6 +26,13 @@ body {
     width: 80%;
 }
 
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
 .navCenter {
     background: #03a9f4;
     background: linear-gradient(45deg, #03a9f4, #55C8FD);
@@ -109,21 +116,33 @@ a {
     color: #03a9f4;
 }
 
+.contactSocialIcon {
+    color: #03a9f4;
+    margin-bottom: 18px;
+}
+
 
 /* CONTACT FORM STYLING */
-  /* label color */
   .input-field label {
     color: #000;
+    font-size: 20px;
   }
-  /* label focus color */
-  .input-field input[type=text]:focus + label {
-    color: #000;
+
+  .input-field input[type=text]:focus + #first_nameLabel,
+  .input-field input[type=text]:focus + #last_nameLabel,
+  .input-field input[type=email]:focus + #emailLabel,
+  .input-field textarea[id=textarea1]:focus + #messageLabel {
+    color: #03a9f4;
   }
-  /* label underline focus color */
-  .input-field input[type=text]:focus {
-    border-bottom: 1px solid #000;
-    box-shadow: 0 1px 0 0 #000;
+
+  #first_name:focus,
+  #last_name:focus,
+  #email:focus,
+  #textarea1:focus {
+    border-bottom: 1px solid #03a9f4;;
+    box-shadow: 0 1px 0 0 #03a9f4;;
   }
+
   /* valid color */
   .input-field input[type=text].valid {
     border-bottom: 1px solid #000;
@@ -140,10 +159,9 @@ a {
   }
 
 
-
-
   /* Hover shake is copied from https://www.w3schools.com/howto/howto_css_shake_image.asp */
-.socialIcon:hover {
+  .contactSocialIcon:hover,
+  .socialIcon:hover {
     /* Start the shake animation and make the animation last for 0.5 seconds */
     animation: shake 1.5s; 
     /* When the animation is finished, start again */

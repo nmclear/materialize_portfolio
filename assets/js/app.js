@@ -6,7 +6,6 @@ $(document).ready(function(){
     //Show side Nav
     $('.sidenav').sidenav();
     //Autoresize text input box
-    $('#textarea1').val('New Text');
     M.textareaAutoResize($('#textarea1'));
 
 //========================================================================================================================
@@ -84,6 +83,7 @@ $(document).ready(function(){
 var instance = new TypeIt('.headerTag', {
     strings: ['Full-Stack Developer.', 'Brewing up web applications.'],
     nextStringDelay: 2500,
+    cursor: false,
     breakLines: false,
     loop: true
 });
