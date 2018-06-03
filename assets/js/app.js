@@ -99,7 +99,7 @@ $(document).ready(function(){
 
 var instance = new TypeIt('.headerTag', {
     strings: ['Full-Stack Developer.', 'Brewing up web applications.'],
-    nextStringDelay: 2500,
+    nextStringDelay: 2000,
     cursor: false,
     breakLines: false,
     loop: true

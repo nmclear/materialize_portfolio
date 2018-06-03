@@ -125,6 +125,40 @@ a {
     color: #03a9f4;
 }
 
+.projectCard {
+    /* width: 360px; */
+    min-height: 320px;
+    max-height: 375px;
+    border-radius: 25px;
+}
+
+.projectCardImg {
+    border-radius: 15px 15px 0 0;
+}
+
+.projectCardLink1,
+.projectCardLink2 {
+    width: 120px;
+    border-radius: 25px;
+}
+
+.projectCardLink1 {
+    position: absolute;
+    bottom: 15px;
+    left: 11.11%;
+    -webkit-transform: translateX(-11.11%);
+    transform: translateX(-11.11%);
+}
+
+.projectCardLink2 {
+    position: absolute;
+    bottom: 15px;
+    left: 77.78%;
+    -webkit-transform: translateX(-77.78%);
+    transform: translateX(-77.78%);
+}
+
+
 .contactSocialIcon {
     color: #03a9f4;
     margin-bottom: 18px;
