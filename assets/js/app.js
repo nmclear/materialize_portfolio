@@ -5,6 +5,8 @@ $(document).ready(function(){
 //========================================================================================================================
     //Show side Nav
     $('.sidenav').sidenav();
+    //Nav dropdown trigger
+    $('.dropdown-trigger').dropdown();
     //Autoresize text input box
     M.textareaAutoResize($('#contactMessage'));
 
@@ -17,32 +19,32 @@ $(document).ready(function(){
 //========================================================================================================================
 // NAVBAR CLICK LISTENERS
 //========================================================================================================================
-    $('#navHome').on('click', function(){
+    $('.navHome').on('click', function(){
         slideUpAllContainers();
         $('#containerHome').slideDown();
     });
 
-    $('#navAbout').on('click', function(){
+    $('.navAbout').on('click', function(){
         slideUpAllContainers();
         $('#containerAbout').slideDown();
     });
 
-    $('#navEducation').on('click', function(){
+    $('.navEducation').on('click', function(){
         slideUpAllContainers();
         $('#containerEducation').slideDown();
     });
 
-    $('#navProjects').on('click', function(){
+    $('.navProjects').on('click', function(){
         slideUpAllContainers();
         $('#containerProjects').slideDown();
     });
 
-    $('#navHobbies').on('click', function(){
+    $('.navHobbies').on('click', function(){
         slideUpAllContainers();
         $('#containerHobbies').slideDown();
     });
 
-    $('#navContact').on('click', function(){
+    $('.navContact').on('click', function(){
         slideUpAllContainers();
         $('#containerContact').slideDown();
     });
