@@ -59,6 +59,19 @@ nav.navCenter ul li a {
     cursor: pointer;
 }
 
+#navDropdown {
+    background: linear-gradient(45deg, #03a9f4, #55C8FD);
+}
+
+#navDropdown .triggerNavLinks {
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+#navDropdown li:hover {
+    background: transparent;
+}
 
 .headerName,
 .headerTitle,
