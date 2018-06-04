@@ -9,6 +9,8 @@ $(document).ready(function(){
     $('.dropdown-trigger').dropdown();
     //Autoresize text input box
     M.textareaAutoResize($('#contactMessage'));
+    //collapsible list
+    $('.collapsible').collapsible();
 
 //========================================================================================================================
 // ON PAGE LOAD CALLS
