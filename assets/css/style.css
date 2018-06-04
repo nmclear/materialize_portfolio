@@ -2,13 +2,6 @@
     box-sizing: border-box;
 }
 
-.sideNavPalmBackground {
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    background-size: cover;
-    background-image: url(../images/montage_cal_bgpic.jpg);
-}
-
 .puzzlePieceIcon {
     color: #03a9f4;
 }
@@ -16,6 +9,9 @@
 body {
     /* background-image: url(../images/blue_white_brick.jpeg); */
     background-image: url(../images/white_brick.jpeg);
+    /* background: #f44f03; */
+    /* background: #03a9f4; */
+    background: #96eda1;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -43,8 +39,9 @@ hr.style-one {
 }
 
 .navCenter {
-    background: #03a9f4;
-    background: linear-gradient(45deg, #03a9f4, #55C8FD);
+    /* background: #03a9f4; */
+    background: #142b6b;
+    /* background: linear-gradient(45deg, #03a9f4, #55C8FD); */
 }
 
 nav.navCenter ul {
@@ -60,7 +57,8 @@ nav.navCenter ul li a {
 }
 
 #navDropdown {
-    background: linear-gradient(45deg, #03a9f4, #55C8FD);
+    /* background: linear-gradient(45deg, #03a9f4, #55C8FD); */
+    background: #142b6b;
 }
 
 #navDropdown .triggerNavLinks {
@@ -78,6 +76,7 @@ nav.navCenter ul li a {
 .headerTag {
     Font-Family: 'Roboto Condensed', Sans-Serif;
     font-weight: 700px;
+    color: #142b6b;
 }
 
 .headerName {
@@ -135,7 +134,12 @@ a {
 }
 
 .socialIcon {
-    color: #03a9f4;
+    /* color: #03a9f4; */
+    color: #142b6b;
+}
+
+.row .col .cardCol {
+    padding: 0;
 }
 
 .projectCard {
@@ -147,12 +151,16 @@ a {
 
 .projectCardImg {
     border-radius: 15px 15px 0 0;
+    height: 100%;
+    width: 100%;
 }
 
 .projectCardLink1,
 .projectCardLink2 {
     width: 120px;
     border-radius: 25px;
+    background: #96eda1;
+    color:#142b6b;
 }
 
 .projectCardLink1 {
@@ -171,14 +179,25 @@ a {
     transform: translateX(-77.78%);
 }
 
+.projectCard {
+    background:#142b6b;
+    color: #96eda1;
+}
+
+.projectCard .projectCardReveal {
+    background:#142b6b;
+    color: #96eda1;
+}
 
 .contactSocialIcon {
-    color: #03a9f4;
+    /* color: #03a9f4; */
+    color: #142b6b;
     margin-bottom: 18px;
 }
 
 #contactFormSubmitBtn {
-    background: #03a9f4;
+    /* background: #03a9f4; */
+    background: #142b6b;
     border-radius: 25px;
 }
 
