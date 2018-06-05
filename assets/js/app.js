@@ -7,10 +7,10 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
     //Nav dropdown trigger
     $('.dropdown-trigger').dropdown();
-    //Autoresize text input box
-    M.textareaAutoResize($('#contactMessage'));
     //collapsible list
     $('.collapsible').collapsible();
+    //tooltip
+    $('.tooltipped').tooltip();
 
 //========================================================================================================================
 // ON PAGE LOAD CALLS
