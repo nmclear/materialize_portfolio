@@ -80,23 +80,6 @@ $(document).ready(function(){
     }
 
 //========================================================================================================================
-// FIREBASE
-//========================================================================================================================
-  // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyC9QrfmjqaHdJTy73WTLUUxEi3voCF1GvU",
-        authDomain: "portfolio-fb684.firebaseapp.com",
-        databaseURL: "https://portfolio-fb684.firebaseio.com",
-        projectId: "portfolio-fb684",
-        storageBucket: "",
-        messagingSenderId: "29324912075"
-    };
-    firebase.initializeApp(config);
-    // Create a variable to reference the database
-    var database = firebase.database();
-
-
-//========================================================================================================================
 // TYPE WRITER ANIMATION
 //========================================================================================================================
 
@@ -109,39 +92,7 @@ var instance = new TypeIt('.headerTag', {
     loop: true
 });
 
-//========================================================================================================================
-// CONTACT FORM
-//========================================================================================================================
 
-$('#contactFormSubmitBtn').on('click', function() {
-    event.preventDefault();
-    getContactInputValues();
-    clearContactInputValues();
-});
-
-function clearContactInputValues() {
-    $('#first_name').val('');
-    $('#last_name').val('');
-    $('#email').val('');
-    $('#contactMessage').val('');
-}
-
-function getContactInputValues() {
-    //GET INPUTS
-    var firstName = $('#first_name').val().trim();
-    var lastName = $('#last_name').val().trim();
-    var email = $('#email').val().trim();
-    var message = $('#contactMessage').val().trim();
-
-    var newContactFormMessage = {
-        firstName: firstName,
-        lastName: lastName,
-        email: email,
-        message: message
-    }
-
-    database.ref().push(newContactFormMessage);
-}
 
 
 

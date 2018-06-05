@@ -144,6 +144,8 @@ a {
 
 .projectCard {
     /* width: 360px; */
+    min-width: 300px;
+    max-width: 360px;
     min-height: 320px;
     max-height: 375px;
     border-radius: 25px;
@@ -151,8 +153,14 @@ a {
 
 .projectCardImg {
     border-radius: 15px 15px 0 0;
-    height: 100%;
-    width: 100%;
+    min-width: 300px;
+    max-width: 360px;
+    min-height: 300px;
+    max-height: 310px;
+}
+
+.projectCardHead {
+    height: 70px;
 }
 
 .projectCardLink1,
