@@ -291,6 +291,9 @@ projectCardAppLink,
     .contactEmailLink {
         font-size: 28px;
     }
+    .socialIcon {
+        margin: 5px;
+    }
 }
 
 @media only screen and (max-width: 992px){
