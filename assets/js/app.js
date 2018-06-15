@@ -3,8 +3,7 @@ $(document).ready(function(){
 //========================================================================================================================
 // MATERIALIZE JS CALLS
 //========================================================================================================================
-    //Show side Nav
-    $('.sidenav').sidenav();
+
     //Nav dropdown trigger
     $('.dropdown-trigger').dropdown();
     //collapsible list
@@ -56,21 +55,11 @@ $(document).ready(function(){
 //========================================================================================================================
 
     function hideAllContainers() {
-        $('#containerHome').hide();
-        $('#containerAbout').hide();
-        $('#containerEducation').hide();
-        $('#containerProjects').hide();
-        $('#containerHobbies').hide();
-        $('#containerContact').hide();
+        $('#containerHome, #containerAbout, #containerEducation, #containerProjects, #containerHobbies, #containerContact').hide();
     }
 
     function slideUpAllContainers() {
-        $('#containerHome').slideUp();
-        $('#containerAbout').slideUp();
-        $('#containerEducation').slideUp();
-        $('#containerProjects').slideUp();
-        $('#containerHobbies').slideUp();
-        $('#containerContact').slideUp();
+        $('#containerHome, #containerAbout, #containerEducation, #containerProjects, #containerHobbies, #containerContact').slideUp();
     }
 
     function displayHomePage() {
@@ -91,10 +80,6 @@ var instance = new TypeIt('.headerTag', {
     breakLines: false,
     loop: true
 });
-
-
-
-
 
 
 

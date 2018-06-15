@@ -9,8 +9,13 @@
     <title>Nick Clear | Portfolio</title>
 
     <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- Materialize Theme Stylesheet -->
+    <link href="assets/css/gallery-dark-materialize.min.css" rel="stylesheet">
+
     <!-- Materialize: Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
 
     <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -43,6 +48,16 @@
             </ul>
         </div>
     </nav>
+                <!-- Dropdown Nav
+                <a class='dropdown-trigger hide-on-med-and-up' href='#' data-target='navDropdown'><i class="material-icons center-align">menu</i></a>
+                <ul id='navDropdown' class='dropdown-content navDropdown'>
+                    <li><a class="navHome triggerNavLinks"><i class="material-icons">home</i>Home</a></li>
+                    <li><a class="navAbout triggerNavLinks"><i class="material-icons">person</i>About</a></li>
+                    <li><a class="navEducation triggerNavLinks"><i class="material-icons">school</i>Education</a></li>
+                    <li><a class="navProjects triggerNavLinks"><i class="material-icons">web</i>Projects</a></li>
+                    <li><a class="navHobbies triggerNavLinks"><i class="material-icons">mood</i>Hobbies</a></li>
+                    <li><a class="navContact triggerNavLinks"><i class="material-icons">phone</i>Contact</a></li>
+                </ul> -->
 
 <!-- Landing Page Container -->
     <div class="container hidden" id="containerHome">
@@ -56,7 +71,7 @@
                 <h1 class="headerTag"></h1>
             </div>
         </div>
-        <div class="row">
+        <div class="row landingSocialDiv">
             <div class="col s2 l1 offset-s2 offset-l4 center-align">
                 <a href="https://www.linkedin.com/in/nickclear/" target="_blank">
                     <i class="fab fa-linkedin-in fa-3x socialIcon"></i>
@@ -85,12 +100,12 @@
     <div class="container hidden" id="containerAbout">
         <div class="row">
             <div class="col s12">
-                <h4 class="headerAbout">About</h4>
+                <h4 class="headerAbout pageHeader">About</h4>
                 <hr class="style-one">
             </div>
         </div>
-        <div class="row">
-            <div class="col l3">
+        <div class="row aboutBackground">
+            <div class="col l3 m12 s12">
                 <div class="row portRow">
                     <div class="col s12 center-align">
                         <img class="headshot z-depth-4" src="assets/images/Nick_Clear_Headshot.jpg" alt="headshot photo">
@@ -127,9 +142,9 @@
                     </div>
                 </div> -->
             </div>
-            <div class="col l9">
-                <div class="row">
-                    <div class="col l12">
+            <div class="col l9 m12 s12">
+                <div class="row aboutBackgroundMobile">
+                    <div class="col l11 xl12 offset-l1">
                         <p class="aboutText">I’m a former craft brewer turned full-stack developer. I like to build things: I once secretly constructed a stroller without assistance at the age of four, and I’ve been creating and designing things ever since. Whether it’s web applications, beer recipes, or Ikea closet organizers, I’ve always had a knack for putting things together.</p>
                         <p class="aboutText">I decided to transfer my brewing skills to the web development industry after experiencing the frustrations of using inefficient brewing software and web applications. Seeking solutions, I developed an ardent interest in computer programming and enrolled in the Full Stack Coding Boot Camp program at UC-Irvine.</p>
                         <p class="aboutText">My science and research experience conjoined with the Coding Boot Camp will prepare me for a career as a full-stack developer. I am currently seeking roles in the software and web development fields beginning in early August. </p>
@@ -144,7 +159,7 @@
 <div class="container hidden" id="containerEducation">
         <div class="row">
             <div class="col s12">
-                <h4 class="headerAbout">Education</h4>
+                <h4 class="headerEducation pageHeader">Education</h4>
                 <hr class="style-one">
             </div>
         </div>
@@ -209,7 +224,7 @@
     <div class="container hidden" id="containerProjects">
         <div class="row">
             <div class="col s12">
-                <h4 class="headerAbout">Projects</h4>
+                <h4 class="headerAbout pageHeader">Projects</h4>
                 <hr class="style-one">
             </div>
         </div>
@@ -338,18 +353,137 @@
     </div>
 
 <!-- Hobbies Container -->
-    <div class="container hidden" id="containerHobbies">
+    <div class="container-fluid hidden" id="containerHobbies">
         <div class="row">
             <div class="col s12">
-                <h4 class="headerAbout">Hobbies</h4>
+                <h4 class="headerProjects pageHeader">Hobbies</h4>
                 <hr class="style-one">
             </div>
         </div>
-        <div class="row">
-            <div class="col s12">
-                <h5 class="headerAbout">Coming Soon!</h5>
+        <div id="portfolio" class="section gray">
+            <div class="gallery row">
+              <div class="col l4 m6 s12 gallery-item gallery-expand">
+                <div class="gallery-curve-wrapper">
+                  <a class="gallery-cover gray">
+                    <img class="responsive-img" src="assets/images/loiter_landing.png" alt="loiter" width="480px" height="325px">
+                  </a>
+                  <div class="gallery-body">
+                    <div class="title-wrapper center-align">
+                      <h3 class="galleryHeader">Loiter</h3>
+                      <span class="waves-effect waves-light btn projectCardAppLink"><a href="https://nickclear.com/loiter/" target="_blank">Live Site</a></span>
+                      <span class="waves-effect waves-light btn projectCardAppLink"><a href="https://github.com/nmclear/loiter" target="_blank">GitHub Repo</a></span>
+                    </div>
+                    <p class="description">
+                      Literally venmo before they sold ou.</p>
+                    <p class="description">
+                      Ea salvia adipisicing vegan man bun. Flexitarian cupidatat skateboard flannel. Drinking vinegar marfa you probably haven't heard
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l4 m6 s12 gallery-item gallery-expand">
+                <div class="gallery-curve-wrapper">
+                  <a class="gallery-cover gray">
+                    <img class="responsive-img" src="assets/images/gifMeBlazer.png" alt="gif me blazer">
+                  </a>
+                  <div class="gallery-body">
+                    <div class="title-wrapper center-align">
+                      <h3 class="galleryHeader">GIF Blazer</h3>
+                      <span class="waves-effect waves-light btn projectCardAppLink"><a href="https://nickclear.com/GIF_Me_Blazer/" target="_blank">Live Site</a></span>
+                      <span class="waves-effect waves-light btn projectCardAppLink"><a href="https://github.com/nmclear/GIF_Me_Blazer" target="_blank">GitHub Repo</a></span>
+                    </div>
+                    <p class="description">
+                      Literally venmo before they sold out,
+                    </p>
+                    <p class="description">
+                      Ea salvia adipisicing vegan man bun. Flexi.
+                    </p> 
+                  </div>
+                </div>
+              </div>
+              <div class="col l4 m6 s12 gallery-item gallery-expand">
+                <div class="gallery-curve-wrapper">
+                  <a class="gallery-cover gray">
+                    <img class="responsive-img" src="assets/images/brewingtrivia.png" alt="brewing trivia game">
+                  </a>
+                  <div class="gallery-body">
+                    <div class="title-wrapper center-align">
+                      <h3 class="galleryHeader">Brewing Trivia</h3>
+                        <span class="waves-effect waves-light btn projectCardAppLink"><a href="https://nickclear.com/brewing_trivia/" target="_blank">Live Site</a></span>
+                        <span class="waves-effect waves-light btn projectCardAppLink"><a href="https://github.com/nmclear/brewing_trivia" target="_blank">GitHub Repo</a></span>
+                    </div>
+                    <p class="description">
+                      Literally venmo before they sold out, DIY heirloo narwhal kinfolk you probably haven't heard of them portland small batch.
+                    </p>
+                    <p class="description">
+                      Ea salvia adipisicing vegan man bun. Flexitarian cu
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l4 m6 s12 gallery-item gallery-expand">
+                <div class="gallery-curve-wrapper">
+                  <a class="gallery-cover gray">
+                    <img class="responsive-img" src="assets/images/hogwartsrailways.png" alt="hogwarts railways">
+                  </a>
+                  <div class="gallery-body">
+                    <div class="title-wrapper center-align">
+                      <h3 class="galleryHeader">Hogwarts Railways</h3>
+                        <span class="waves-effect waves-light btn projectCardAppLink"><a href="https://nickclear.com/hogwarts_railways/" target="_blank">Live Site</a></span>
+                        <span class="waves-effect waves-light btn projectCardAppLink"><a href="https://github.com/nmclear/hogwarts_railways" target="_blank">GitHub Repo</a></span>
+                    </div>
+                    <p class="description">
+                      Literally venmo before they sold out, DIY ucifix narwhal kinfolk you probably haven't heard of them portland small batch.
+                    </p>
+                    <p class="description">
+                      Ea salvia adipisicing vegan man bun. Flexitaat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l4 m6 s12 gallery-item gallery-expand">
+                <div class="gallery-curve-wrapper">
+                  <a class="gallery-cover gray">
+                    <img class="responsive-img" src="assets/images/birdcatcher.png" alt="bird catcher">
+                  </a>
+                  <div class="gallery-body">
+                    <div class="title-wrapper center-align">
+                      <h3 class="galleryHeader">Bird Catcher Game</h3>
+                        <span class="waves-effect waves-light btn projectCardAppLink"><a href="https://nickclear.com/bird_catcher_game/" target="_blank">Live Site</a></span>
+                        <span class="waves-effect waves-light btn projectCardAppLink"><a href="https://github.com/nmclear/bird_catcher_game" target="_blank">GitHub Repo</a></span>
+                    </div>
+                    <p class="description">
+                      Literally venmo before they sold out, DIY hefix narwhal kinfolk you probably haven't heard of them portland small batch.
+                    </p>
+                    <p class="description">
+                      Ea salvia adipisicing vegan man bun. Fleigin coffee, williamsburg cardigan banjo forage pug distillery tumblr hexagon vinyl occaecat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col l4 m6 s12 gallery-item gallery-expand">
+                <div class="gallery-curve-wrapper">
+                  <a class="gallery-cover gray">
+                    <img class="responsive-img" src="assets/images/gifMeBlazer.png" alt="placeholder">
+                  </a>
+                  <div class="gallery-body">
+                    <div class="title-wrapper center-align">
+                      <h3 class="galleryHeader">Cave</h3>
+                        <span class="waves-effect waves-light btn projectCardAppLink"><a href="https://nickclear.com/brewing_trivia/" target="_blank">Live Site</a></span>
+                        <span class="waves-effect waves-light btn projectCardAppLink"><a href="https://github.com/nmclear/brewing_trivia" target="_blank">GitHub Repo</a></span>
+                    </div>
+                    <p class="description">
+                      Literally venmo before they sold out, DIcifix narwhal kinfolk you probably haven't heard of them portland small batch.
+                    </p>
+                    <p class="description">
+                      Ea salvia adipisicing vegan man bun. Fleof in coffee, williamsburg cardigan banjo forage pug distillery tumblr hexagon vinyl occaecat.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
     </div>
 
 
@@ -359,18 +493,15 @@
     <div class="container hidden" id="containerContact">
         <div class="row">
             <div class="col s12">
-                <h4 class="headerAbout">Contact</h4>
+                <h4 class="headerContact pageHeader">Contact</h4>
                 <hr class="style-one">
             </div>
         </div>
         <div class="row">
-            <div class="col s3">
-                <div>Something cool here.</div>
-            </div>
-            <div class="col s6">
+            <div class="col s12">
                 <div class="row">
                     <div class="col s12 center-align">
-                        <a class="tooltipped" href="mailto:nickclear22@gmail.com" 
+                        <a class="tooltipped contactTooltipped" href="mailto:nickclear22@gmail.com" 
                         data-position="left" data-tooltip="Lets Chat!">
                             <h3 class="contactEmailLink">nickclear22@gmail.com</h3>
                         </a>
@@ -378,7 +509,7 @@
                 </div>
                 <div class="row">
                     <div class="col s12 center-align">
-                        <a class="tooltipped" href="https://www.linkedin.com/in/nickclear/"
+                        <a class="tooltipped contactTooltipped" href="https://www.linkedin.com/in/nickclear/"
                         target="_blank" data-position="right" data-tooltip="Lets Connect!">
                             <i class="fab fa-linkedin-in fa-6x contactSocialIcon"></i>
                         </a>
@@ -386,7 +517,7 @@
                 </div>
                 <div class="row">
                     <div class="col s12 center-align">
-                        <a class="tooltipped" href="https://github.com/nmclear"
+                        <a class="tooltipped contactTooltipped" href="https://github.com/nmclear"
                         target="_blank" data-position="left" data-tooltip="Lets Collab!">
                             <i class="fab fa-github fa-6x contactSocialIcon"></i>
                         </a>
@@ -394,16 +525,11 @@
                 </div>
                 <div class="row">
                     <div class="col s12 center-align">
-                        <a class="tooltipped" href="https://www.twitter.com/NickClear"
+                        <a class="tooltipped contactTooltipped" href="https://www.twitter.com/NickClear"
                         target="_blank" data-position="right" data-tooltip="Lets Tweet!">
                             <i class="fab fa-twitter fa-6x contactSocialIcon"></i>
                         </a>
                     </div>
-                </div>
-            </div>
-            <div class="col s3">
-                <div>
-                    <p>Something even cooler here.</p>
                 </div>
             </div>
         </div>
@@ -425,10 +551,21 @@
     <!-- jQuery File-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     
+
+
+    <!-- Materialize Theme JavaScript -->
+    <script src="assets/js/galleryExpand.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="assets/js/color-thief.min.js"></script>
+    <script src="assets/js/init.js"></script>
+    <script src="https://cdn.jsdelivr.net/materialize/0.98.0/js/materialize.min.js"></script>
+
     <!-- Materialize: Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <!-- TypeIt CDN -->
     <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.1/dist/typeit.min.js"></script>
+
 
     <!-- My JavaScript-->
     <script src="assets/js/app.js"></script>
