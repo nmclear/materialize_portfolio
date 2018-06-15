@@ -19,6 +19,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -31,9 +32,9 @@
             <ul id="nav-mobile" class="hide-on-small-only">
                 <li><a class="navHome">Home</a></li>
                 <li><a class="navAbout">About</a></li>
-                <li><a class="navEducation">Education</a></li>
+                <li><a class="navEducation">Skills</a></li>
                 <li><a class="navProjects">Projects</a></li>
-                <li><a class="navHobbies">Hobbies</a></li>
+                <!-- <li><a class="navHobbies">Hobbies</a></li> -->
                 <li><a class="navContact">Contact</a></li>
             </ul>
             <!-- Dropdown Nav -->
@@ -41,23 +42,13 @@
             <ul id='navDropdown' class='dropdown-content navDropdown'>
                 <li><a class="navHome triggerNavLinks"><i class="material-icons">home</i>Home</a></li>
                 <li><a class="navAbout triggerNavLinks"><i class="material-icons">person</i>About</a></li>
-                <li><a class="navEducation triggerNavLinks"><i class="material-icons">school</i>Education</a></li>
+                <li><a class="navEducation triggerNavLinks"><i class="material-icons">build</i>Skills</a></li>
                 <li><a class="navProjects triggerNavLinks"><i class="material-icons">web</i>Projects</a></li>
-                <li><a class="navHobbies triggerNavLinks"><i class="material-icons">mood</i>Hobbies</a></li>
+                <!-- <li><a class="navHobbies triggerNavLinks"><i class="material-icons">mood</i>Hobbies</a></li> -->
                 <li><a class="navContact triggerNavLinks"><i class="material-icons">phone</i>Contact</a></li>
             </ul>
         </div>
     </nav>
-                <!-- Dropdown Nav
-                <a class='dropdown-trigger hide-on-med-and-up' href='#' data-target='navDropdown'><i class="material-icons center-align">menu</i></a>
-                <ul id='navDropdown' class='dropdown-content navDropdown'>
-                    <li><a class="navHome triggerNavLinks"><i class="material-icons">home</i>Home</a></li>
-                    <li><a class="navAbout triggerNavLinks"><i class="material-icons">person</i>About</a></li>
-                    <li><a class="navEducation triggerNavLinks"><i class="material-icons">school</i>Education</a></li>
-                    <li><a class="navProjects triggerNavLinks"><i class="material-icons">web</i>Projects</a></li>
-                    <li><a class="navHobbies triggerNavLinks"><i class="material-icons">mood</i>Hobbies</a></li>
-                    <li><a class="navContact triggerNavLinks"><i class="material-icons">phone</i>Contact</a></li>
-                </ul> -->
 
 <!-- Landing Page Container -->
     <div class="container hidden" id="containerHome">
@@ -159,69 +150,66 @@
 <div class="container hidden" id="containerEducation">
         <div class="row">
             <div class="col s12">
-                <h4 class="headerEducation pageHeader">Education</h4>
+                <h4 class="headerEducation pageHeader">Skills</h4>
                 <hr class="style-one">
             </div>
         </div>
         <div class="row">
-            <div class="col m12 l6">
-                <div class="row">
-                    <div class="col s12">
-                        <h5 class="headerAbout">Education</h5>
+            <div class="col l12 center-align">
+                <div class="row devIconRow">
+                    <div class="col l2 s6">
+                        <i class="devicon-bootstrap-plain-wordmark devIcons"></i>
+                    </div>
+                    <div class="col l2 s6">
+                        <i class="devicon-css3-plain-wordmark devIcons"></i>
+                    </div>
+                    <div class="col l2 s6">
+                        <i class="devicon-express-original-wordmark devIcons"></i>
+                    </div>
+                    <div class="col l2 s6">
+                        <i class="devicon-git-plain-wordmark devIcons"></i>
+                    </div>
+                    <div class="col l2 s6">
+                        <i class="devicon-heroku-line-wordmark devIcons"></i>
+                    </div>
+                    <div class="col l2 s6">
+                        <i class="devicon-html5-plain-wordmark devIcons"></i>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col s12">
-                        <ul class="collapsible">
-                            <li>
-                                <div class="collapsible-header"><i class="material-icons">computer</i>UC-Irvine</div>
-                                <div class="collapsible-body"><span>UC-Irvine Coding Bootcamp.</span></div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header"><i class="material-icons">mode_edit</i>World Brewing Academy</div>
-                                <div class="collapsible-body"><span>Siebel Institute of Technology.</span></div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header"><i class="material-icons">school</i>University of Wisconsin Madison</div>
-                                <div class="collapsible-body"><span>Bachelor's of Science in Biology.</span></div>
-                            </li>
-                        </ul>
+                <div class="row devIconRow">
+                     <div class="col l2 s6">
+                        <i class="devicon-javascript-plain devIcons"></i>
                     </div>
-                </div>
-            </div>
-            <div class="col m12 l6">
-                <div class="row">
-                    <div class="col s12">
-                        <h5 class="headerAbout">Experience</h5>
+                    <div class="col l2 s6">
+                        <i class="devicon-jquery-plain-wordmark devIcons"></i>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <ul class="collapsible">
-                            <li>
-                                <div class="collapsible-header"><i class="material-icons">work</i>Hop Lot Brewing Co.</div>
-                                <div class="collapsible-body"><span>Brewer Hop Lot Brewing Co.</span></div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header"><i class="material-icons">work</i>MobCraft Beer Inc.</div>
-                                <div class="collapsible-body"><span>Brewery Volunteer Intern.</span></div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header"><i class="material-icons">work</i>McArdle Laboratory for Cancer Research</div>
-                                <div class="collapsible-body"><span>Undergraduate Research Intern</span></div>
-                            </li>
-                        </ul>
+                    <div class="col l2 s6">
+                        <i class="devicon-mongodb-plain-wordmark devIcons"></i>
                     </div>
+                    <div class="col l2 s6">
+                        <i class="devicon-mysql-plain-wordmark devIcons"></i>
+                    </div>
+                    <div class="col l2 s6">
+                        <i class="devicon-nodejs-plain-wordmark devIcons"></i>
+                    </div>
+                    <div class="col l2 s6">
+                        <i class="devicon-react-original-wordmark devIcons"></i>
+                    </div>
+                         <!-- <i class="devicon-javascript-plain devIcons"></i> -->
+                        <!-- <i class="devicon-jquery-plain-wordmark devIcons"></i> -->
+                        <!-- <i class="devicon-mongodb-plain-wordmark devIcons"></i> -->
+                        <!-- <i class="devicon-mysql-plain-wordmark devIcons"></i> -->
+                        <!-- <i class="devicon-nodejs-plain-wordmark devIcons"></i> -->
+                        <!-- <i class="devicon-react-original-wordmark devIcons"></i> -->
                 </div>
             </div>
         </div>
-
     </div>
 
 
 
 <!-- Projects Container -->
-    <div class="container hidden" id="containerProjects">
+    <!-- <div class="container hidden" id="containerProjects">
         <div class="row">
             <div class="col s12">
                 <h4 class="headerAbout pageHeader">Projects</h4>
@@ -350,13 +338,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-<!-- Hobbies Container -->
-    <div class="container-fluid hidden" id="containerHobbies">
+<!-- Projects Container -->
+    <div class="container-fluid hidden" id="containerProjects">
         <div class="row">
             <div class="col s12">
-                <h4 class="headerProjects pageHeader">Hobbies</h4>
+                <h4 class="headerProjects pageHeader">Projects</h4>
                 <hr class="style-one">
             </div>
         </div>
@@ -365,7 +353,7 @@
               <div class="col l4 m6 s12 gallery-item gallery-expand">
                 <div class="gallery-curve-wrapper">
                   <a class="gallery-cover gray">
-                    <img class="responsive-img" src="assets/images/loiter_landing.png" alt="loiter" width="480px" height="325px">
+                    <img class="responsive-img" src="assets/images/loiter_landing.png" alt="loiter">
                   </a>
                   <div class="gallery-body">
                     <div class="title-wrapper center-align">
