@@ -113,7 +113,9 @@ nav .nav-wrapper>ul {
 }
 
 .aboutBackground {
-    background: rgb(251,239,238,0.7);
+    /* for safari opacity issues */
+    background: rgb(251,239,238);
+    background-color: rgb(251,239,238,0.7);
     border-radius: 10px;
     /* border: 1px solid #142b6b; */
     border: 1px solid #fbefee;
