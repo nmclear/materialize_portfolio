@@ -319,7 +319,7 @@ projectCardAppLink,
         border: none;
     }
     .aboutBackgroundMobile {
-        background: rgb(251,239,238,0.7);
+        background: rgb(251,239,238);
         border-radius: 10px;
         border: 1px solid #fbefee;
     }
