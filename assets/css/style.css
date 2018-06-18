@@ -236,6 +236,20 @@ projectCardAppLink,
     background: #1f46b1;
 }
 
+/* .responsive-img {
+
+} */
+
+.galleryRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    padding: 0 4px;
+    align-self: flex-start;
+    cursor: pointer;
+}
 
 .contactEmailLink {
     color: #f44f03;
