@@ -1,2 +1,3 @@
-# materialize_portfolio
-Using materialize framework for personal portfolio
+# Nick Clear Portfolio
+
+## Live Site: https://nickclear.com/

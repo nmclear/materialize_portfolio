@@ -2,339 +2,416 @@
     box-sizing: border-box;
 }
 
-.puzzlePieceIcon {
-    color: #03a9f4;
-}
-
-html {
-    background: url(../images/blue-nature-ocean-26681.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    Font-Family: 'Cabin', Sans-Serif;
-}
-
-body {
-    background-color: transparent;
-}
-
-.container {
-    width: 80%;
-    opacity: 1;
-}
-
-#containerLoading {
-    width: 100%;
+body, html {
     height: 100%;
-}
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+  
 
-.hidden {
-    display: none;
-}
+  .topnav {
+    height: 60px;
+    width: 100%;
+    background: #142b6b;
+    text-align: center;
+    line-height: 60px
+  }
+
+  .navLink {
+    color: #96eda1;
+    font-size: 18px;
+    margin: 20px;
+  }
+
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    position: relative;
+    /* opacity: 0.65; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  /* .bgimg-1 {
+    background-image: url("../images/background-black-blank-733857.jpg");
+    min-height: 100%;
+  } */
+  
+  .aboutHeadshot {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .imgDiv {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .bgimg-1 {
+    background-image: 
+      linear-gradient(
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1)
+      ),
+      url("../images/blue-nature-ocean-26681.jpg");
+      min-height: 100%;
+  }
+
+  .bgimg-2 {
+    background-image: 
+      linear-gradient(
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1)
+      ),
+      url("../images/blue-mac-wallpaper-mobile-wallpaper-37487.jpg");
+      min-height: 400px;
+  }
+
+  .bgimg-3 {
+    background-image: 
+      linear-gradient(
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1)
+      ),
+      /* url("../images/island-landscape-mountains-65322.jpg"); */
+      url("../images/beach-bench-boardwalk-462024.jpg");
+      min-height: 500px;
+  }
+
+  .bgimg-4 {
+    background-image: 
+      linear-gradient(
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1)
+      ),
+      url("../images/beach-black-sand-calmness-614513.jpg");
+      min-height: 600px;
+  }
 
 hr.style-one {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, #ccc, #142b6b, #ccc);
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
-.navCenter {
-    background: linear-gradient(45deg, #142b6b, #1f42a3);
-}
 
-nav.navCenter ul {
-    text-align: center;
-}
-nav.navCenter ul li {
-    display: inline;
-    float: none;
-}
-nav.navCenter ul li a {
-    display: inline-block;
-    cursor: pointer;
-    color: #fbefee;
-    font-size: 16px;
-}
-
-#navDropdown {
-    background: #142b6b;
-}
-
-#navDropdown .triggerNavLinks {
-    color: #fbefee;
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 25%;
     width: 100%;
     text-align: center;
-}
-
-#navDropdown li:hover {
-    background: transparent;
-}
-
-
-nav .nav-wrapper>ul {
-    height: auto;
-    line-height: auto;
-}
-
-.pageHeader,
-.galleryHeader,
-.headerName,
-.headerTitle,
-.headerTag {
-    Font-Family: 'Roboto Condensed', Sans-Serif;
-    font-weight: 700px;
+    color: #000;
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 12px;
+    /* font-size: 25px; */
+    letter-spacing: 6px;
+  }
+  
+  #landingName {
+    background-color: transparent;
     color: #142b6b;
-    text-shadow: 2px 3px 3px #fbefee;
+    font-size: 120px;
+    text-shadow: 3px 3px 3px white;
+  }
+
+
+  #landingTag {
+    background-color: #96eda1;
+    /* background-color: transparent; */
+    color: #142b6b;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    letter-spacing: 4px;
+  }
+
+.groupStyle {
+  color:#777;
+  background-color:white;
+  /* text-align:center; */
+  padding: 50px 80px;
+  text-align: justify;
 }
 
-.headerName {
-    font-size: 72px;
+#about p {
+  font-size: 16px;
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.headerTag {
-    font-size: 84px;
-}
-
-.pageHeader {
-    font-size: 50px;
-    text-align: center;
-}
-
-.headerSubAbout {
-    font-size: 35px;
-    text-align: center;
-    margin: 0;
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 40px "Lato", sans-serif;
+    color: #142b6b;
+    margin-top: 0px;
     margin-bottom: 5px;
-}
-
-.portRow {
-    margin-bottom: 20px;
-}
-
-.aboutBackground {
-    /* for safari opacity issues */
-    background: rgb(251,239,238);
-    background-color: rgb(251,239,238,0.7);
-    border-radius: 10px;
-    /* border: 1px solid #142b6b; */
-    border: 1px solid #fbefee;
-}
-
-.headshot {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-
-.aboutText {
-    letter-spacing: 1px;
-    line-height: 130%;
-    font-size: 20px;
-    margin: 15px;
-    padding: 0 10px;
-    width: 90%;
-}
-
-.aboutEmail {
-    font-size: 20px;
+  }
+  
+  .headerDef {
     text-align: center;
-    width: 100%;
+    font-size: 18px;
+  }
+
+.landingSocial,
+.socialDiv {
+  text-align: center;
 }
 
-a {
-    color: inherit;
+.socialDiv p {
+  margin-left: 33.333333333333333333%;
+  width: 33.333333333333333333%;
+  text-align: left;
+}
+
+.socialDiv {
+ margin: 0 auto;
+}
+
+.landingSocial {
+  margin-top: 20px;
+}
+
+.landingIcons {
+  margin: 10px;
+}
+
+.landingIcons:hover {
+  opacity: 0.8;
+}
+
+.socialText {
+  font-size: 24px;
+  margin-left: 20px;
+  color: #777;
+}
+
+.fas,
+.fab {
+  color: #96eda1
+}
+
+.skillsIconRow {
+  margin: 50px;
 }
 
 .devIcons {
-    font-size: 85px;
-    color: #f44f03;
-    /* margin: 40px; */
-    margin-bottom: 35px;
+  font-size: 85px;
+  color: #96eda1;
+  margin: 15px;
 }
 
-.devIconRow {
-    margin-bottom: 50px;
+.navLink:hover {
+  color: white;
 }
 
-.socialIcon {
-    color: #f44f03;
+.fas:hover,
+.fab:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-.row .col .cardCol {
-    padding: 0em;
-}
-#portfolio .row .col {
-    padding: 0;
-}
-
-.projectCard {
-    /* width: 360px; */
-    min-width: 300px;
-    max-width: 360px;
-    min-height: 320px;
-    max-height: 375px;
-    border-radius: 25px;
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
-.projectCardImg {
-    border-radius: 15px 15px 0 0;
-    min-width: 300px;
-    max-width: 360px;
-    min-height: 300px;
-    max-height: 310px;
+#contact a:hover {
+  text-decoration: none;
+  color: black;
 }
 
-.projectCardHead {
-    height: 70px;
-}
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+          background-attachment: scroll;
+      }
+  }
+  
 
-projectCardAppLink,
-.projectCardLink1,
-.projectCardLink2 {
-    width: 120px;
-    border-radius: 25px;
-    background: #96eda1;
-    color:#142b6b;
-}
 
-.projectCardLink1 {
-    position: absolute;
-    bottom: 15px;
-    left: 11.11%;
-    -webkit-transform: translateX(-11.11%);
-    transform: translateX(-11.11%);
-}
 
-.projectCardLink2 {
-    position: absolute;
-    bottom: 15px;
-    left: 77.78%;
-    -webkit-transform: translateX(-77.78%);
-    transform: translateX(-77.78%);
-}
 
-.projectCard {
-    background:#142b6b;
-    color: #96eda1;
-}
 
-.projectCard .projectCardReveal {
-    background:#142b6b;
-    color: #96eda1;
-}
 
-.projectCardAppLink {
-    border-radius: 25px;
-    color: #fbefee;
-    background: #142b6b;
-}
 
-.projectCardAppLink:hover {
-    background: #1f46b1;
-}
-
-/* .responsive-img {
-
-} */
-
-.galleryRow {
+  
+  .container {
+    max-width: 1125px;
+    /* max-width: 100%; */
+    margin: 0 auto;
+  }
+  
+  .gallery {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  
+  .gallery-item {
+    width: 330px;
+    height: 265px;
+    text-decoration: none;
+  }
+  
+  .gallery-item img {
+    position: absolute;
+    height: 260px;
+    width: 330px;
+    /* width: 100%; */
+    /* height: 100%; */
+    object-fit: contain;
+
+  }
+  
+  .text-wrapper {
+    position: relative;
+    width: 330px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+  }
+  
+  .text-wrapper:hover {
+    transition: all 0.8s ease;
+    background: rgba(0, 0, 0, 0.6);
+    /* background: rgba(102,118,58, 0.6); */
+    opacity: 1;
+  }
+  
+  .name {
+    font-size: 1.5em;
+  }
+  
+  
+  /* Because there is no hover on a touch devide, we need to move the text to the bottom of the image and display it by default */
+  
+  @media only screen and (max-width: 1024px) {
+    .text-wrapper {
+      opacity: 1;
+      justify-content: flex-end;
+      text-shadow: 1px 1px 1px #000;
+    }
+    .text-wrapper span {
+      /* background: rgba(0, 0, 0, 0.6); */
+      background-color: #66763a;
+      background-color: #777;
+    }
+    .title {
+      margin-bottom: 1em;
+    }
+    #landingName {
+      font-size: 88px;
+    }
+    #landingTag {
+      font-size: 20px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+/* div.gallery img {
+    width: 100%;
+    height: auto;
+} */
+
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    /* width: 24.99999%; */
+    width: 33.33333333333;
+    margin: 10px;
 }
 
-.gallery-item {
-    padding: 0 4px;
-    align-self: flex-start;
-    cursor: pointer;
-}
-
-.contactEmailLink {
-    color: #f44f03;
-    margin-bottom: 18px;
-    font-size: 35px;
-}
-
-
-.contactSocialIcon {
-    color: #f44f03;
-    margin-bottom: 18px;
-}
-.material-tooltip > .backdrop,
-.contactTooltipped.backdrop {
-    background: #142b6b;
-    color: #fbefee;
-    /* border-radius: 25px; */
-}
-
-
-
-  /* Hover shake is copied from https://www.w3schools.com/howto/howto_css_shake_image.asp */
-.contactSocialIcon:hover,
-.socialIcon:hover {
-    /* Start the shake animation and make the animation last for 0.5 seconds */
-    animation: shake 1.5s; 
-    /* When the animation is finished, start again */
-    animation-iteration-count: infinite; 
-}
-
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
-
-@media only screen and (max-width: 550px){
-    .landingSocialDiv {
-        position:absolute;
-        bottom:0;
-        width:100%;
-        margin-bottom: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        width: 100%;
+        margin: 6px 0;
     }
-    .headerName {
-        font-size: 48px;
+    .text-wrapper {
+      opacity: 1;
+      justify-content: flex-end;
+      text-shadow: 1px 1px 1px #000;
     }
-    .headerTag {
-        font-size: 52px;
+    .title {
+      margin-bottom: 1em;
     }
-    .aboutText {
-        font-size: 17px;
+    #landingName {
+      font-size: 60px;
     }
-    .aboutBackground {
-        background: rgb(251,239,238,0.9);
+    #landingTag {
+      font-size: 15px;
     }
-    .contactEmailLink {
-        font-size: 28px;
+    .landingIcons {
+      font-size: 12px;
     }
-    .socialIcon {
-        margin: 5px;
+    .caption {
+      top: 33%;
+    }
+    .socialText {
+      font-size: 16px;
+    }
+    .groupStyle {
+      padding: 20px 30px;
+    }
+    #about p {
+      font-size: 14px;
+    }
+    .socialDiv p {
+      margin-left: 40px;
+      width: 100%;
+      text-align: left;
     }
 }
 
-@media only screen and (max-width: 992px){
-    .aboutBackground {
-        background: transparent;
-        border-radius: 0px;
-        border: none;
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
     }
-    .aboutBackgroundMobile {
-        background: rgb(251,239,238);
-        border-radius: 10px;
-        border: 1px solid #fbefee;
+    #landingName {
+      font-size: 42px;
     }
+    #landingTag {
+      font-size: 12px;
+    }
+    .landingIcons {
+      font-size: 10px;
+    }
+    .caption {
+      top: 35%;
+    }
+    .socialText {
+      font-size: 14px;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
